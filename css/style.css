@@ -1,4 +1,7 @@
 /* Main Rules */
+a {
+    text-decoration: none;
+}
 /* End Main Rules */ 
 
 /* Variables */
@@ -8,6 +11,7 @@
     --secondary-font: Brich;
     --primary-color: #ff9933;
     --secondary-color: #bf55d9;
+    --section-color: #efedee;
     --primary-duration: 0.5s;
     --secondary-duration: 4s;
     --section-padding: 80px;
@@ -78,13 +82,21 @@
 }
 /* End Landing */
 
-/* Feature */
-.feature {
+/* About */
+.about {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
 
-/* End Feature */
+/* End About */
+
+/* Flash Deals */
+.flashdeals {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background: var(--section-color);
+}
+/* End Flash Deals */
 
 /* Banner Area */
 .banner-area .banner-img {
@@ -98,6 +110,46 @@
     scale: 1.15;
 }
 /* End Banner Area */
+
+/* Products */
+.products {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.products .col .card {
+    background: var(--section-color);
+}
+.products .col .card img {
+    transition: var(--primary-duration);
+}
+.products .col .card:hover img {
+    scale: 1.15;
+}
+.products .col .card .product-content {
+    background: var(--secondary-color);
+}
+.products .col .card .product-content .fa-star {
+    color: var(--primary-color);
+}
+.products .col .card .product-content a {
+    color: black;
+}
+/* End Products */
+
+/* Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background: var(--section-color);
+}
+.contact .col {
+    border: 2px solid #e1e1e1;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 30px;
+    background: white;
+}
+/* End Contact */
 
 
 
