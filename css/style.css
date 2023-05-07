@@ -158,6 +158,7 @@ a {
 }
 .contact .col {
     border: 2px solid #e1e1e1;
+    border-radius: 10px;
     text-align: center;
     padding: 60px 20px;
     margin-top: 30px;
