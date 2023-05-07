@@ -41,6 +41,10 @@ a {
 .main-color {
     color: var(--primary-color);
 }
+.section-title {
+    color: var(--primary-color);
+    font-family: var(--main-font);
+}
 .card-img-2 {
     opacity: 0;
     visibility: hidden;
@@ -149,9 +153,20 @@ a {
     margin-top: 30px;
     background: white;
 }
+.contact .con-ico {
+    color: var(--primary-color);
+}
 /* End Contact */
 
-
+/* Footer */
+footer {
+    background: black;
+    color: white;
+}
+footer span {
+    color: var(--primary-color);
+}
+/* End Footer */
 
 
 
