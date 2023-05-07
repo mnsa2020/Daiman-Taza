@@ -1,0 +1,138 @@
+/* Main Rules */
+/* End Main Rules */ 
+
+/* Variables */
+:root {
+    --main-font: ComicaBrush;
+    --primary-font: Helloamerica;
+    --secondary-font: Brich;
+    --primary-color: #ff9933;
+    --secondary-color: #bf55d9;
+    --primary-duration: 0.5s;
+    --secondary-duration: 4s;
+    --section-padding: 80px;
+}
+@font-face {
+    font-family: ComicaBrush;
+    src: url(../fonts/ComicabrushRegular-K733y.otf);
+}
+@font-face {
+    font-family: Helloamerica;
+    src: url(../fonts/Helloamerica-JRw5o.otf);
+}
+@font-face {
+    font-family: Brich;
+    src: url(../fonts/BrichRegular-DOoB9.otf);
+}
+/* End Variables */
+
+/* Components */
+.navbar-brand {
+    color: var(--primary-color);
+    font-family: var(--main-font);
+}
+.logo {
+    height: 56px;
+}
+.main-color {
+    color: var(--primary-color);
+}
+.card-img-2 {
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+/* End Components */
+
+/* header */
+/* End header */
+
+/* Landing */
+.landing {
+    background-image: url(../images/landing.png);
+    background-size: cover;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .landing {
+        height: 75vh;
+    }
+}
+.landing .overlay img {
+    position: absolute;
+    width: 30%;
+}
+.landing .overlay img:first-child {
+    bottom: 10%;
+    animation: SwingUpDown1 var(--secondary-duration) infinite linear;
+}
+.landing .overlay img:last-child {
+    top: 10%;
+    right: 0;
+    animation: SwingUpDown2 var(--secondary-duration) infinite linear;
+}
+.landing h1 .main-color {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+}
+/* End Landing */
+
+/* Feature */
+.feature {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+/* End Feature */
+
+/* Banner Area */
+.banner-area .banner-img {
+    overflow: hidden;
+    
+}
+.banner-area .banner-img img {
+    transition: var(--primary-duration);
+}
+.banner-area .banner-img img:hover {
+    scale: 1.15;
+}
+/* End Banner Area */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes SwingUpDown1 {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 3%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+@keyframes SwingUpDown2 {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 3%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+/* End Animations */
