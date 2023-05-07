@@ -38,8 +38,12 @@ a {
 .logo {
     height: 56px;
 }
-.main-color {
+.go-top {
     color: var(--primary-color);
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 5;
 }
 .section-title {
     color: var(--primary-color);
@@ -52,6 +56,12 @@ a {
     left: 0;
 }
 /* End Components */
+
+/* PreSection */
+.pre-page .con-icon {
+    color: var(--primary-color);
+}
+/* End PreSection */
 
 /* header */
 /* End header */
