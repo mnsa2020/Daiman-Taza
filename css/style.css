@@ -1,8 +1,4 @@
-/* Main Rules */
-a {
-    text-decoration: none;
-}
-/* End Main Rules */ 
+
 
 /* Variables */
 :root {
@@ -30,6 +26,15 @@ a {
 }
 /* End Variables */
 
+/* Main Rules */
+a {
+    text-decoration: none;
+}
+title {
+    font-family: var(--main-font);
+}
+/* End Main Rules */ 
+
 /* Components */
 .navbar-brand {
     color: var(--primary-color);
@@ -44,6 +49,7 @@ a {
     bottom: 10px;
     left: 10px;
     z-index: 5;
+    transition: var(--primary-duration);
 }
 .section-title {
     color: var(--primary-color);
@@ -176,6 +182,7 @@ footer {
 }
 footer span {
     color: var(--primary-color);
+    font-family: var(--main-font);
 }
 /* End Footer */
 
